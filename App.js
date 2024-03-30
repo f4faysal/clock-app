@@ -63,7 +63,7 @@ export default function App() {
           <Image style={{}} source={require("./assets/refresh.png")} />
         </View>
 
-        {/* Lower Portion */}
+        {/* Lower Portion edit */}
 
         <View
           style={{
