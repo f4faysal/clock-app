@@ -193,6 +193,23 @@ export default function App() {
           </Pressable>
         </View>
       </View>
+
+      {/* EXPANDED VIEW */}
+      {showMore && (
+        <View
+          style={{
+            backgroundColor: "#fff",
+            opacity: 0.8,
+            paddingVertical: 48,
+            paddingHorizontal: 26,
+          }}
+        >
+          <RowView label={"Current Timezone"} value="Europe/London" />
+          <RowView label={"Day of the year"} value="295" />
+          <RowView label={"Day of the week"} value="5" />
+          <RowView label={"Week number"} value="42" />
+        </View>
+      )}
     </ImageBackground>
   );
 }
