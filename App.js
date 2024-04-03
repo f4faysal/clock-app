@@ -3,10 +3,12 @@ import {
   Inter_700Bold,
   useFonts,
 } from "@expo-google-fonts/inter";
+import { useState } from "react";
 import {
   ActivityIndicator,
   Image,
   ImageBackground,
+  Pressable,
   StyleSheet,
   Text,
   View,
@@ -16,7 +18,7 @@ export default function App() {
     "Inter-regular": Inter_400Regular,
     "Inter-bold": Inter_700Bold,
   });
-
+  const [showMore, setShowMore] = useState(false);
   if (!fontsLoaded) {
     // return <AppLoading />;
     return <ActivityIndicator />;
@@ -51,7 +53,7 @@ export default function App() {
             </Text>
             <Text
               style={{
-                fontFamily: "Inter-Bold",
+                fontFamily: "Inter-bold",
                 color: "#fff",
                 fontSize: 12,
                 marginTop: 8,
@@ -70,13 +72,14 @@ export default function App() {
             marginBottom: 32,
           }}
         >
+          {/* Good morning */}
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <Image source={require("./assets/sun.png")} />
             <Text
               style={{
                 color: "#fff",
                 fontSize: 15,
-                fontFamily: "Inter-Bold",
+                fontFamily: "Inter-bold",
                 marginLeft: 8,
                 letterSpacing: 3,
               }}
@@ -84,11 +87,12 @@ export default function App() {
               Good Morning
             </Text>
           </View>
+          {/* Time */}
           <View style={{ marginTop: 8 }}>
             <Text
               style={{
                 color: "#fff",
-                fontSize: 100,
+                fontSize: 95,
                 fontFamily: "Inter-bold",
               }}
             >
@@ -98,18 +102,55 @@ export default function App() {
               </Text>
             </Text>
           </View>
+          {/* Location */}
           <View style={{ marginTop: 16 }}>
             <Text
               style={{
-                color: "#fff",
-                fontSize: 15,
                 fontFamily: "Inter-bold",
+                fontSize: 15,
+                color: "white",
                 letterSpacing: 3,
               }}
             >
               In Dhaka, Bangladesh
             </Text>
           </View>
+          {/* Button */}
+          <Pressable
+            onPress={() => {
+              setShowMore(!showMore);
+            }}
+            style={{
+              flexDirection: "row",
+              height: 40,
+              width: 115,
+              backgroundColor: "#fff",
+              borderRadius: 30,
+              marginTop: 50,
+              justifyContent: "space-between",
+              paddingLeft: 16,
+              paddingRight: 4,
+              alignItems: "center",
+            }}
+          >
+            <Text
+              style={{
+                fontFamily: "Inter-bold",
+                fontSize: 12,
+                color: "#000",
+                letterSpacing: 3,
+              }}
+            >
+              {showMore ? "LESS" : "MORE"}
+            </Text>
+            <Image
+              source={
+                showMore
+                  ? require("./assets/arrow-up.png")
+                  : require("./assets/arrow-down.png")
+              }
+            />
+          </Pressable>
         </View>
       </View>
     </ImageBackground>
