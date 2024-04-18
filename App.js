@@ -196,7 +196,8 @@ export default function App() {
         </View>
       </View>
 
-      {/* EXPANDED VIEW */}
+      {/* EXPANDED VIEW  and its content */}
+
       {showMore && (
         <View
           style={{
