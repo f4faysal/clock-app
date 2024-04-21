@@ -1,5 +1,5 @@
 <!-- welcome to the repository-->
-# Welcome to the repository hi
+# Welcome to the repository hi hello
 This repository is a collection of all the projects I have worked on. Each project is in a separate folder and has its own README file. The README file contains a brief description of the project and the technologies used. Feel free to explore the projects and provide feedback.
 
 ## Projects 😁 
