@@ -1,4 +1,4 @@
-# Service Booking and Management Website ( Full Stack)
+# Service Booking and Management Website 
 
 ### Introduction
 
