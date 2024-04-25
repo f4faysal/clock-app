@@ -1,7 +1,7 @@
 # Service Booking and Management Website 
 
-docker push f4faysal/node-app
- docker tag 170477c4664d f4faysal/node-app
+`docker push f4faysal/node-app`
+`docker tag 170477c4664d f4faysal/node-app`
 
 ### Introduction
 
