@@ -15,6 +15,7 @@ Welcome to the Service Booking and Management Website assignment! In this projec
 
 - Your website should offer a user-friendly and secure registration process.
 - Implement proper validation to ensure data accuracy.
+- hello
 
 ### Service Search and Add to Cart
 
