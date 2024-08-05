@@ -106,6 +106,7 @@ Welcome to the Service Booking and Management Website assignment! In this projec
 - Latest News
 - Footer
 - Two or more unique Sections
+- helli
 
 ### Functional Requirements
 
